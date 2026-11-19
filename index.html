@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Облако любви</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0a0a0a; /* Почти черный фон */
+            overflow: hidden; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        canvas {
+            display: block;
+        }
+        #hint {
+            position: absolute; 
+            bottom: 30px; 
+            color: #60a5fa; 
+            font-family: Arial, sans-serif; 
+            font-size: 18px; 
+            opacity: 0.8; 
+            transition: opacity 1s;
+        }
+    </style>
+</head>
+<body>
+    <div id="hint">Нажми на экран, чтобы включить музыку 💙</div>
+    <canvas id="heartCanvas"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
